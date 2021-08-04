@@ -78,6 +78,7 @@
         letter-spacing: 0.025em;
         color: $primary-color;
         padding: 20px 60px;
+        background-color: transparent;
     }
 
     &__boxright {
@@ -102,5 +103,77 @@
     }
     &__boxright-item:nth-child(even) &__boxright-text {
         min-width: 313px;
+    }
+}
+
+.gallery {
+    margin-bottom: 138px;
+    &__info {
+        text-align: center;
+    }
+    &__title {
+        color: rgba($default, 0.8);
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+    }
+    &__text {
+        margin: 0 auto;
+        color: rgba($default, 0.7);
+        max-width: 505px;
+        position: relative;
+        padding: 34px 0 29px 0;
+        margin-bottom: 88px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 132px;
+            height: 3px;
+            background-color: $primary-color;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &__buttons {
+        text-align: center;
+        margin-bottom: 66px;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: rgba($default, 0.7);
+
+        &.mixitup-control-active {
+            color: $primary-color;
+        }
+    }
+    &__btn + &__btn {
+        margin-left: 57px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    &__item {
+        width: 298px;
+        height: 291px;
+    }
+    &__item-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }
