@@ -152,6 +152,7 @@
         text-transform: uppercase;
         letter-spacing: 0.01em;
         color: rgba($default, 0.7);
+        cursor: pointer;
 
         &.mixitup-control-active {
             color: $primary-color;
@@ -175,5 +176,281 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+    }
+}
+
+.mot {
+    margin-bottom: 110px;
+
+    &__title {
+        color: rgba($default, 0.8);
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+    }
+    &__text {
+        color: rgba($default, 0.7);
+        padding-bottom: 33px;
+        margin-bottom: 69px;
+        padding-top: 40px;
+        max-width: 450px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 132px;
+            height: 3px;
+            background-color: $primary-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 74px;
+    }
+
+    &__item-imgbg {
+        width: 321px;
+        height: 458px;
+    }
+    &__item-bg {
+        width: 321px;
+        height: 458px;
+    }
+    &__item-box {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    &__item-info {
+        margin-bottom: 67px;
+    }
+    &__item-title {
+        color: rgba($default, 0.8);
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+    }
+    &__item-text {
+        color: rgba($default, 0.7);
+        margin-bottom: 44px;
+        max-width: 698px;
+    }
+    &__item-social {
+        display: flex;
+    }
+    &__item-sociallink {
+        color: rgba($default, 0.8);
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        margin-right: 33px;
+    }
+    &__item-images {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-link {
+        position: relative;
+        width: 197px;
+        height: 227px;
+
+        &:hover .mot__item-imginfo {
+            opacity: 1;
+        }
+    }
+    &__item-img {
+        width: 100%;
+        height: 100%;
+    }
+    &__item-imginfo {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 197px;
+        height: 37px;
+        background-color: rgba(#000, 0.5);
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &__item-name {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+}
+
+.subscribe {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/city-bg.jpg);
+        width: 100%;
+        height: 512px;
+        top: 0;
+        z-index: -1;
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 512px;
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: rgba(#ffffff, 0.8);
+        margin-bottom: 31px;
+    }
+    &__text {
+        color: rgba(#ffffff, 0.8);
+        margin-bottom: 62px;
+    }
+    &__form-input {
+        width: 521px;
+        height: 79px;
+        background-color: #ffffff;
+        border: none;
+        line-height: 24px;
+        letter-spacing: 0.025em;
+        color: rgba(#2c2c2c, 0.7);
+        padding: 32px 36px;
+        outline: none;
+        border-radius: 5px;
+    }
+    &__form-button {
+        display: inline-block;
+        border-radius: 5px;
+        min-width: 214px;
+        height: 79px;
+        background-color: $primary-color;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        margin-left: 22px;
+    }
+}
+
+.get {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 139px;
+    align-items: flex-end;
+    &__inner {
+        width: 728px;
+        margin-right: 107px;
+        margin-left: 161px;
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: rgba($default, 0.8);
+    }
+    &__text {
+        color: rgba($default, 0.7);
+        padding: 51px 0 54px;
+        margin-bottom: 75px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 132px;
+            height: 3px;
+            background-color: $primary-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__form-input {
+        border: none;
+        border-radius: 5px;
+        padding: 29px 48px 26px 48px;
+        background-color: rgba($default, 0.1);
+        width: 46.5%;
+        color: rgba($default, 0.7);
+    }
+    &__form-area {
+        border: none;
+        border-radius: 5px;
+        background-color: rgba($default, 0.1);
+        width: 100%;
+        resize: none;
+        margin: 45px 0;
+        min-height: 249px;
+        padding: 35px 51px;
+        color: rgba($default, 0.7);
+    }
+    &__form-btn {
+        display: block;
+        border: none;
+        width: 100%;
+        height: 72px;
+        background-color: #ff3b3b;
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        padding: 15px 10px;
+    }
+}
+
+.contactinfo {
+    width: 575px;
+    height: 481px;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+
+    &__box {
+        margin-left: 79px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: rgba(#fff, 0.8);
+        margin-bottom: 41px;
+    }
+    &__phone,
+    &__mail,
+    &__address {
+        color: rgba(#fff, 0.8);
+        margin-bottom: 30px;
+        display: block;
     }
 }
