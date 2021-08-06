@@ -78,7 +78,6 @@ function styles() {
         outputStyle: "expanded",
       })
     )
-    .pipe(webpcss({webpClass: '.webp',noWebpClass: '.no-webp'}))
     .pipe(dest("app/css"))
     .pipe(
       scss({
