@@ -3,7 +3,6 @@
 }
 
 .menu {
-    height: 89px;
     background-color: #313030;
     &__list {
         display: flex;
@@ -14,7 +13,7 @@
     &__list-item {
         display: flex;
         align-items: center;
-        padding: 0 24px;
+        padding: 43px 24px 34px;
         height: 100%;
         &--active {
             background-color: #ff3f40;

@@ -31,3 +31,15 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.btn-up {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	bottom: 55px;
+	right: 35px;
+	cursor: pointer;
+	z-index: 25;
+	display: none;
+	opacity: .8;
+}

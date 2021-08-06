@@ -7,6 +7,7 @@
     }
     &__box {
         padding-right: 112px;
+        margin: 0 5px;
     }
     &__box-title {
         font-size: 60px;
@@ -32,6 +33,11 @@
         font-weight: 700;
         letter-spacing: 0.025em;
     }
+
+    iframe {
+        height: 356px;
+        width: 551px;
+    }
 }
 
 .dyk {
@@ -43,7 +49,7 @@
         &::after {
             content: "";
             position: absolute;
-            width: 1249px;
+            width: 98%;
             height: 2px;
             background-color: #ececec;
             bottom: 0;
@@ -168,14 +174,11 @@
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 20px;
     }
-    &__item {
-        width: 298px;
-        height: 291px;
-    }
     &__item-img {
         object-fit: cover;
         width: 100%;
         height: 100%;
+        max-height: 291px;
     }
 }
 
@@ -214,13 +217,10 @@
         grid-gap: 74px;
     }
 
-    &__item-imgbg {
-        width: 321px;
-        height: 458px;
-    }
     &__item-bg {
-        width: 321px;
-        height: 458px;
+        max-width: 321px;
+        max-height: 500px;
+        height: 100%;
     }
     &__item-box {
         display: grid;
@@ -236,6 +236,7 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.01em;
+        margin-bottom: 20px;
     }
     &__item-text {
         color: rgba($default, 0.7);
@@ -255,19 +256,22 @@
         margin-right: 33px;
     }
     &__item-images {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
     }
     &__item-link {
         position: relative;
-        width: 197px;
-        height: 227px;
+        
 
         &:hover .mot__item-imginfo {
             opacity: 1;
         }
     }
+    &__item-link,
     &__item-img {
+        max-height: 250px;
+        max-width: 220px;
         width: 100%;
         height: 100%;
     }
@@ -275,7 +279,7 @@
         display: flex;
         position: absolute;
         bottom: 0;
-        width: 197px;
+        width: 100%;
         height: 37px;
         background-color: rgba(#000, 0.5);
         justify-content: center;
@@ -356,10 +360,11 @@
 .get {
     display: flex;
     justify-content: center;
+    margin-top: 106px;
     margin-bottom: 139px;
     align-items: flex-end;
     &__inner {
-        width: 728px;
+        max-width: 728px;
         margin-right: 107px;
         margin-left: 161px;
     }
@@ -429,7 +434,7 @@
 
 .contactinfo {
     width: 575px;
-    height: 481px;
+    height: 494px;
     background-color: #2d2d2d;
     display: flex;
     align-items: center;
